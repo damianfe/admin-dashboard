@@ -155,7 +155,7 @@ const data: Payment[] = [
 export default function OrdersPage({}: Props) {
   return (
     <div className="flex flex-col gap-5  w-full">
-      <PageTitle title="Orders" />
+      <PageTitle title="Turnos" />
       <DataTable columns={columns} data={data} />
     </div>
   );

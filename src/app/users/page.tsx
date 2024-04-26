@@ -49,7 +49,7 @@ const columns: ColumnDef<Payment>[] = [
   },
   {
     accessorKey: "method",
-    header: "Method"
+    header: "Sucursal"
   }
 ];
 
@@ -58,61 +58,61 @@ const data: Payment[] = [
     name: "John Doe",
     email: "john@example.com",
     lastOrder: "2023-01-01",
-    method: "Credit Card"
+    method: "Palermo"
   },
   {
     name: "Alice Smith",
     email: "alice@example.com",
     lastOrder: "2023-02-15",
-    method: "PayPal"
+    method: "Chacarita"
   },
   {
     name: "Bob Johnson",
     email: "bob@example.com",
     lastOrder: "2023-03-20",
-    method: "Stripe"
+    method: "Cuzco Peru"
   },
   {
     name: "Emma Brown",
     email: "emma@example.com",
     lastOrder: "2023-04-10",
-    method: "Venmo"
+    method: "Balvanera"
   },
   {
     name: "Michael Davis",
     email: "michael@example.com",
-    lastOrder: "2023-05-05",
-    method: "Cash"
+    lastOrder: "2024-05-05",
+    method: "Mendoza"
   },
   {
     name: "Sophia Wilson",
     email: "sophia@example.com",
-    lastOrder: "2023-06-18",
-    method: "Bank Transfer"
+    lastOrder: "2024-06-18",
+    method: "San Telmo"
   },
   {
     name: "Liam Garcia",
     email: "liam@example.com",
     lastOrder: "2023-07-22",
-    method: "Payoneer"
+    method: "San Luis"
   },
   {
     name: "Olivia Martinez",
     email: "olivia@example.com",
     lastOrder: "2023-08-30",
-    method: "Apple Pay"
+    method: "Tucuman"
   },
   {
     name: "Noah Rodriguez",
     email: "noah@example.com",
     lastOrder: "2023-09-12",
-    method: "Google Pay"
+    method: "Cordoba"
   },
   {
     name: "Ava Lopez",
     email: "ava@example.com",
     lastOrder: "2023-10-25",
-    method: "Cryptocurrency"
+    method: "Rio Cuarto"
   },
   {
     name: "Elijah Hernandez",
@@ -149,7 +149,7 @@ const data: Payment[] = [
 export default function UsersPage({}: Props) {
   return (
     <div className="flex flex-col gap-5  w-full">
-      <PageTitle title="Users" />
+      <PageTitle title="Barbers" />
       <DataTable columns={columns} data={data} />
     </div>
   );

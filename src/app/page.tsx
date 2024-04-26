@@ -9,27 +9,27 @@ import SalesCard, { SalesProps } from "@/components/SalesCard";
 
 const cardData: CardProps[] = [
   {
-    label: "Total Revenue",
-    amount: "$45,231.89",
-    discription: "+20.1% from last month",
+    label: "Total Ventas",
+    amount: "$45,238",
+    discription: "+20.1% respecto al mes pasado",
     icon: DollarSign
   },
   {
-    label: "Subscriptions",
-    amount: "+2350",
-    discription: "+180.1% from last month",
+    label: "Subcriptores",
+    amount: "+230",
+    discription: "+18.1% respecto al mes pasado",
     icon: Users
   },
   {
-    label: "Sales",
+    label: "Ventas",
     amount: "+12,234",
-    discription: "+19% from last month",
+    discription: "+19% respecto al mes pasado",
     icon: CreditCard
   },
   {
-    label: "Active Now",
+    label: "Activos Ahora",
     amount: "+573",
-    discription: "+201 since last hour",
+    discription: "+21 desde la última hora",
     icon: Activity
   }
 ];
@@ -65,7 +65,7 @@ const uesrSalesData: SalesProps[] = [
 export default function Home() {
   return (
     <div className="flex flex-col gap-5  w-full">
-      <PageTitle title="Dashboard" />
+      <PageTitle title="Administracion Barbershop" />
       <section className="grid w-full grid-cols-1 gap-4 gap-x-8 transition-all sm:grid-cols-2 xl:grid-cols-4">
         {cardData.map((d, i) => (
           <Card
@@ -85,9 +85,9 @@ export default function Home() {
         </CardContent>
         <CardContent className="flex justify-between gap-4">
           <section>
-            <p>Recent Sales</p>
+            <p>Ventas</p>
             <p className="text-sm text-gray-400">
-              You made 265 sales this month.
+            Has realizado 265 ventas este mes.
             </p>
           </section>
           {uesrSalesData.map((d, i) => (
